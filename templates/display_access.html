@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_access</title>
+</head>
+<body>
+  <center>
+    <h1>Display_access</h1>
+    <table border="3px">
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Date</th>
+        </tr>
+
+        {% for i in access %}
+
+        <tr>
+            <td align="center">{{ i.name }}</td>
+            <td align="center">{{ i.author }}</td>
+            <td align="center">{{ i.date }}</td>
+        </tr>
+        {% endfor %}
+
+        
+    </table>
+  </center>  
+</body>
+</html>
